@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.banner{
+/* Banner section style */
+.banner {
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -12,25 +13,272 @@
     gap: 100px;
 }
 
-.banner-title{
+.banner-title {
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
     gap: 20px;
 }
-.banner-title h1{
-    font-size: 40px;
+
+.banner-title h1 {
+    font-size: 3rem;
     font-weight: bold;
-    border-left: 2px solid  #FF5959 ;
+    border-left: 2px solid #FF5959;
     padding-left: 5px;
 }
 
-.btn{
+.btn {
     padding: 10px 20px;
-    background-color:#FF5959 ;
+    background-color: #FF5959;
     color: white;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+}
+
+/* Banner section style - Responcibe*/
+@media screen and (max-width: 576px) {
+    .banner {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .banner-img{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .banner {
+        gap: 20px;
+        margin-top: 50px;
+        width: 100%;
+    }
+}
+
+/* 2026 mession section style */
+
+#mission-2026 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#mission-2026 h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.boxes {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.box {
+    padding: 70px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+p {
+    color: gray;
+}
+
+/* misssion section Responsive */
+@media screen and (max-width: 576px) {
+    .boxes {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 50px;
+        width: 70%;
+
+    }
+    .p{
+        width: 100%;
+    }
+
+    .box {
+        padding: 20px 30px;
+        margin-top: 20px;
+    }
+
+    #mission-2026 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .boxes {
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    .box {
+        padding: 20px 30px;
+        margin-top: 20px;
+    }
+
+    #mission-2026 {
+        width: 100%;
+    }
+}
+
+/* main contant section style */
+.contant {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.frist-contant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.sceond-contant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+
+.discreption p {
+    margin: 20px 0px;
+}
+
+.shapes-img {
+    position: absolute;
+    left: 70px;
+    z-index: -1;
+}
+
+.shapes-img-sec {
+    position: absolute;
+    right: 70px;
+    top: 1365px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 576px) {
+
+    .frist-contant,
+    .sceond-contant {
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+        margin: 0px;
+        padding: 0px
+    }
+
+    .contant {
+        width: 100%;
+    }
+
+    .shapes-img-sec,
+    .shapes-img {
+        display: none;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .frist-contant,
+    .sceond-contant {
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+        margin: 0px;
+        padding: 0px
+    }
+
+    .contant {
+        width: 100%;
+    }
+
+    .shapes-img-sec,
+    .shapes-img {
+        display: none;
+    }
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    margin: 50px;
+    font-weight: bolder;
+}
+
+.covid-19-application{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.covid-19{
+     display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding-left: 100px;
+}
+
+.covid-discription{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+.covid-discription h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.shape-3{
+    position: absolute;
+    left: 210px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 576px){
+    .covid-19-application{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .covid-19{
+        flex-direction: column;
+        margin: 0;
+        padding-left: 0;
+    }
+    .shape-3{
+        display: none;
+    }
+    .title{
+        margin: 0;
+        width: 70%;
+    }
+    p{
+        width: 80%;
+    }
+    h1{
+        width: 70%;
+    }
+}
+
+.foot{
+    background-color: black;
+    height: 100px;
+    color: white;
+    text-align: center;
 }
